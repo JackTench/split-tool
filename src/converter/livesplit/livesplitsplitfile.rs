@@ -2,11 +2,12 @@ use spex::xml::XmlDocument;
 
 use crate::converter::livesplit::livesplitsplit::LiveSplitSplit;
 
+#[derive(Debug, Clone)]
 pub struct LiveSplitSplitFile {
     pub game_name: String,
     pub category_name: String,
     pub platform: String,
-    pub attempt_count: u32,
+    pub attempt_count: i32,
     pub segments: Vec<LiveSplitSplit>,
 }
 
@@ -42,7 +43,7 @@ impl LiveSplitSplitFile {
             Some(count_str) => count_str.text().expect("0"),
             None => "0",
         };
-        let attempt_count: u32 = attempt_count_str.trim().parse().unwrap_or(0);
+        let attempt_count: i32 = attempt_count_str.trim().parse().unwrap_or(0);
 
         // Read splits.
         let mut segments: Vec<LiveSplitSplit> = Vec::new();

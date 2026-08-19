@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::libresplit::lssplit::LibreSplitSplit;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct LibreSplitSplitFile {
     pub title: String,
     pub attempt_count: i32,

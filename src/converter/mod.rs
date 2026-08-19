@@ -1,3 +1,5 @@
+pub mod livesplit;
+
 use crate::libresplit::lssplitfile::LibreSplitSplitFile;
 
 pub trait ConvertableSplitFile {

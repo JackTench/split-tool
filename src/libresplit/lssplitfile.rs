@@ -1,4 +1,5 @@
 use serde::{Deserialize, Serialize};
+use serde_json::to_string_pretty;
 
 use crate::libresplit::lssplit::LibreSplitSplit;
 
@@ -14,4 +15,10 @@ pub struct LibreSplitSplitFile {
     pub theme_variant: String,
     pub width: i32,
     pub height: i32,
+}
+
+impl LibreSplitSplitFile {
+    pub fn to_json(&self) -> String {
+        to_string_pretty(&self).expect("Failed to write JSON.")
+    }
 }

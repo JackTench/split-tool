@@ -18,6 +18,6 @@ fn main() {
         .map_err(|e| e.to_string())
         .unwrap();
     let livesplit = LiveSplitSplitFile::new(xml);
-    let libresplit = livesplit.convert();
+    let libresplit = livesplit.convert().to_json();
     write("test.json", libresplit);
 }

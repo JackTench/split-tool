@@ -1,4 +1,7 @@
-use std::{fs::read_to_string, io::Cursor};
+use std::{
+    fs::{read_to_string, write},
+    io::Cursor,
+};
 
 use spex::parsing::XmlReader;
 
@@ -16,6 +19,5 @@ fn main() {
         .unwrap();
     let livesplit = LiveSplitSplitFile::new(xml);
     let libresplit = livesplit.convert();
-
-    println!("{:?}", libresplit);
+    write("test.json", libresplit);
 }

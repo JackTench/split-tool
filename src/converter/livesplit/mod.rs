@@ -1,2 +1,2 @@
-pub mod livesplitsplit;
+pub mod livesplitsegments;
 pub mod livesplitsplitfile;

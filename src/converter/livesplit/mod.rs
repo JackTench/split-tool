@@ -7,7 +7,7 @@ pub mod livesplitsegments;
 pub mod livesplitsplitfile;
 
 impl ConvertableSplitFile for LiveSplitRun {
-    fn convert(&self) -> LibreSplitSplitFile {
+    fn convert(self) -> LibreSplitSplitFile {
         let splits = self
             .segments
             .segment

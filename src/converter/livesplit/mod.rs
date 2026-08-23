@@ -1,46 +1,53 @@
 use crate::{
-    converter::{ConvertableSplitFile, livesplit::livesplitsplitfile::LiveSplitSplitFile},
+    converter::{ConvertableSplitFile, livesplit::livesplitsplitfile::LiveSplitRun},
     libresplit::{lssplit::LibreSplitSplit, lssplitfile::LibreSplitSplitFile},
 };
 
-pub mod livesplitsplit;
+pub mod livesplitsegments;
 pub mod livesplitsplitfile;
 
-impl ConvertableSplitFile for LiveSplitSplitFile {
-    fn convert(&self) -> LibreSplitSplitFile {
-        // Get title.
-        let title = self.game_name.clone() + " " + &self.category_name;
-        let attempt_count = self.attempt_count;
+impl ConvertableSplitFile for LiveSplitRun {
+    fn convert(self) -> LibreSplitSplitFile {
+        let splits = self
+            .segments
+            .segment
+            .into_iter()
+            .map(|segment| {
+                let split_time = segment
+                    .split_times
+                    .split_time
+                    .first()
+                    .map(|time| time.real_time.clone())
+                    .unwrap_or_else(|| "0.000000".to_string());
 
-        // Construct splits vector.
-        let mut splits: Vec<LibreSplitSplit> = vec![];
-        for lss_split in self.segments.clone() {
-            let split = LibreSplitSplit {
-                title: lss_split.name,
-                icon: "".to_string(),
-                time: lss_split.split_time,
-                best_time: "".to_string(),
-                best_segment: lss_split.best_segment,
-            };
-            splits.push(split);
-        }
+                let best_segment = if segment.best_segment_time.real_time.is_empty() {
+                    "0.000000".to_string()
+                } else {
+                    segment.best_segment_time.real_time
+                };
 
-        // Get size.
-        // The window of LibreSplit will not shrink beyond this size.
-        let width = 60;
-        let height = 80;
+                LibreSplitSplit {
+                    title: segment.name,
+                    // TODO: Port icons.
+                    icon: String::new(),
+                    time: split_time.clone(),
+                    best_time: split_time,
+                    best_segment,
+                }
+            })
+            .collect();
 
         LibreSplitSplitFile {
-            title,
-            attempt_count,
+            title: format!("{} {}", self.game_name, self.category_name),
+            attempt_count: self.attempt_count,
             comparison_method: 0,
-            start_delay: "".to_string(),
-            world_record: "".to_string(),
+            start_delay: "0.000000".to_string(),
+            world_record: "0.000000".to_string(),
             splits,
-            theme: "".to_string(),
-            theme_variant: "".to_string(),
-            width,
-            height,
+            theme: "default".to_string(),
+            theme_variant: "default".to_string(),
+            width: 10,
+            height: 10,
         }
     }
 }

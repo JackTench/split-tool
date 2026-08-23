@@ -1,11 +1,8 @@
-use std::{
-    fs::{read_to_string, write},
-    io::Cursor,
-};
+use std::fs::{read_to_string, write};
 
-use spex::parsing::XmlReader;
+use quick_xml::de::from_str;
 
-use crate::converter::{ConvertableSplitFile, livesplit::livesplitsplitfile::LiveSplitSplitFile};
+use crate::converter::{ConvertableSplitFile, livesplit::livesplitsplitfile::LiveSplitRun};
 
 mod converter;
 mod libresplit;
@@ -13,11 +10,7 @@ mod libresplit;
 fn main() {
     // Convert test LiveSplit file.
     let file = read_to_string("test.lss").unwrap();
-    let cursor = Cursor::new(file);
-    let xml = XmlReader::parse_auto(cursor)
-        .map_err(|e| e.to_string())
-        .unwrap();
-    let livesplit = LiveSplitSplitFile::new(xml);
+    let livesplit: LiveSplitRun = from_str(&file).unwrap();
     let libresplit = livesplit.convert().to_json();
     write("test.json", libresplit);
 }

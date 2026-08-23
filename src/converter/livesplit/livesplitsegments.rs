@@ -33,5 +33,5 @@ pub struct SplitTime {
 #[derive(Debug, Deserialize, Default)]
 pub struct Time {
     #[serde(rename = "RealTime", default)]
-    real_time: String,
+    pub real_time: String,
 }

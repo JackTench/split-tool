@@ -6,8 +6,8 @@ use split_tool::converter::{ConvertableSplitFile, livesplit::livesplitsplitfile:
 #[test]
 fn test_convert_lss_libre() {
     // Read input LSS file.
-    let input = read_to_string("tests/files/test_input.lss")
-        .expect("Failed to read test_input.lss");
+    let input =
+        read_to_string("tests/files/test_input.lss").expect("Failed to read test_input.lss");
 
     // Convert to LibreSplit file.
     let livesplit: LiveSplitRun = from_str(&input).expect("Failed to read LSS from file");

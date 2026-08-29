@@ -1,7 +1,12 @@
 [package]
 name = "split-tool"
 version = "0.1.0"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/JackTench/split-tool"
 edition = "2024"
+
+[lib]
+crate-type = ["lib", "cdylib"]
 
 [dependencies]
 serde = { version = "1.0.229", features = ["derive"] }

@@ -1,0 +1,279 @@
+{
+  "title": "\n   Boktai 2 Any%",
+  "attempt_count": 6,
+  "comparison_method": 0,
+  "start_delay": "0.000000",
+  "world_record": "0.000000",
+  "splits": [
+    {
+      "title": "Enter Cathedral",
+      "icon": "",
+      "time": "00:07:26.6537821",
+      "best_time": "00:07:26.6537821",
+      "best_segment": "00:07:22.4312464"
+    },
+    {
+      "title": "Defeat Skeleton Trap!",
+      "icon": "",
+      "time": "00:12:27.4914917",
+      "best_time": "00:12:27.4914917",
+      "best_segment": "00:04:59.3924810"
+    },
+    {
+      "title": "Short Spear",
+      "icon": "",
+      "time": "00:14:52.4998358",
+      "best_time": "00:14:52.4998358",
+      "best_segment": "00:02:21.6588817"
+    },
+    {
+      "title": "Insert Blue Crystal",
+      "icon": "",
+      "time": "00:21:02.9098494",
+      "best_time": "00:21:02.9098494",
+      "best_segment": "00:06:10.4049473"
+    },
+    {
+      "title": "Defeat Duneyrr",
+      "icon": "",
+      "time": "00:23:15.0243908",
+      "best_time": "00:23:15.0243908",
+      "best_segment": "00:02:07.8312646"
+    },
+    {
+      "title": "Purify Duneyrr",
+      "icon": "",
+      "time": "00:27:42.6473028",
+      "best_time": "00:27:42.6473028",
+      "best_segment": "00:04:27.6229120"
+    },
+    {
+      "title": "Short Sword",
+      "icon": "",
+      "time": "00:30:49.7522217",
+      "best_time": "00:30:49.7522217",
+      "best_segment": "00:03:07.1049189"
+    },
+    {
+      "title": "Enter Remains",
+      "icon": "",
+      "time": "00:31:19.2043928",
+      "best_time": "00:31:19.2043928",
+      "best_segment": "00:00:28.9616525"
+    },
+    {
+      "title": "Frost",
+      "icon": "",
+      "time": "00:33:02.1957243",
+      "best_time": "00:33:02.1957243",
+      "best_segment": "00:01:39.3610001"
+    },
+    {
+      "title": "Cloud",
+      "icon": "",
+      "time": "00:36:04.6176524",
+      "best_time": "00:36:04.6176524",
+      "best_segment": "00:02:53.3516940"
+    },
+    {
+      "title": "Defeat Axe",
+      "icon": "",
+      "time": "00:39:41.2559162",
+      "best_time": "00:39:41.2559162",
+      "best_segment": "00:03:34.0681570"
+    },
+    {
+      "title": "Enter Remains B",
+      "icon": "",
+      "time": "00:41:54.8247486",
+      "best_time": "00:41:54.8247486",
+      "best_segment": "00:01:46.6978948"
+    },
+    {
+      "title": "Defeat Vampire",
+      "icon": "",
+      "time": "00:45:54.7994483",
+      "best_time": "00:45:54.7994483",
+      "best_segment": "00:03:59.9746997"
+    },
+    {
+      "title": "Purify Django",
+      "icon": "",
+      "time": "00:49:55.8404775",
+      "best_time": "00:49:55.8404775",
+      "best_segment": "00:03:57.7800304"
+    },
+    {
+      "title": "Enter Dark City",
+      "icon": "",
+      "time": "00:53:50.4248480",
+      "best_time": "00:53:50.4248480",
+      "best_segment": "00:03:54.5843705"
+    },
+    {
+      "title": "Defeat Cheyenne",
+      "icon": "",
+      "time": "00:59:56.2388576",
+      "best_time": "00:59:56.2388576",
+      "best_segment": "00:06:05.6218102"
+    },
+    {
+      "title": "Re-enter Dark City",
+      "icon": "",
+      "time": "01:03:06.5461050",
+      "best_time": "01:03:06.5461050",
+      "best_segment": "00:03:05.2983764"
+    },
+    {
+      "title": "Defeat Durathror",
+      "icon": "",
+      "time": "01:08:04.0853769",
+      "best_time": "01:08:04.0853769",
+      "best_segment": "00:04:50.0963125"
+    },
+    {
+      "title": "Purify Durathror",
+      "icon": "",
+      "time": "01:14:35.7924967",
+      "best_time": "01:14:35.7924967",
+      "best_segment": "00:06:25.6946959"
+    },
+    {
+      "title": "Earth",
+      "icon": "",
+      "time": "01:18:00.0157683",
+      "best_time": "01:18:00.0157683",
+      "best_segment": "00:02:43.3984686"
+    },
+    {
+      "title": "Tarot Card 1",
+      "icon": "",
+      "time": "01:19:05.5046026",
+      "best_time": "01:19:05.5046026",
+      "best_segment": "00:01:05.4888343"
+    },
+    {
+      "title": "Tarot Card 2",
+      "icon": "",
+      "time": "01:21:32.4803701",
+      "best_time": "01:21:32.4803701",
+      "best_segment": "00:02:26.9757675"
+    },
+    {
+      "title": "Tarot Card 3",
+      "icon": "",
+      "time": "01:23:06.9478889",
+      "best_time": "01:23:06.9478889",
+      "best_segment": "00:01:30.6824455"
+    },
+    {
+      "title": "Flamberge",
+      "icon": "",
+      "time": "01:25:59.1063527",
+      "best_time": "01:25:59.1063527",
+      "best_segment": "00:02:52.1584638"
+    },
+    {
+      "title": "Grind to Level 21",
+      "icon": "",
+      "time": "01:32:50.5932567",
+      "best_time": "01:32:50.5932567",
+      "best_segment": "00:06:51.4869040"
+    },
+    {
+      "title": "Defeat Dvalinn",
+      "icon": "",
+      "time": "01:37:10.5161903",
+      "best_time": "01:37:10.5161903",
+      "best_segment": "00:04:19.9229336"
+    },
+    {
+      "title": "Purify Dvalinn",
+      "icon": "",
+      "time": "01:40:27.1972897",
+      "best_time": "01:40:27.1972897",
+      "best_segment": "00:03:10.1556039"
+    },
+    {
+      "title": "Enter Spiral Tower",
+      "icon": "",
+      "time": "01:41:46.9902988",
+      "best_time": "01:41:46.9902988",
+      "best_segment": "00:01:19.7930091"
+    },
+    {
+      "title": "Defeat Sword +",
+      "icon": "",
+      "time": "01:44:46.0391692",
+      "best_time": "01:44:46.0391692",
+      "best_segment": "00:02:47.1687487"
+    },
+    {
+      "title": "Defeat Axe +",
+      "icon": "",
+      "time": "01:50:12.7741387",
+      "best_time": "01:50:12.7741387",
+      "best_segment": "00:05:26.7349695"
+    },
+    {
+      "title": "Defeat Dainn",
+      "icon": "",
+      "time": "01:56:51.6435823",
+      "best_time": "01:56:51.6435823",
+      "best_segment": "00:06:38.8694436"
+    },
+    {
+      "title": "Purify Dainn",
+      "icon": "",
+      "time": "01:59:48.9413996",
+      "best_time": "01:59:48.9413996",
+      "best_segment": "00:02:53.7461121"
+    },
+    {
+      "title": "Enter Undead Zone",
+      "icon": "",
+      "time": "02:05:32.3662596",
+      "best_time": "02:05:32.3662596",
+      "best_segment": "00:05:43.4248600"
+    },
+    {
+      "title": "Defeat Sand Worm",
+      "icon": "",
+      "time": "02:08:34.6006761",
+      "best_time": "02:08:34.6006761",
+      "best_segment": "00:03:02.2344165"
+    },
+    {
+      "title": "Defeat Lich",
+      "icon": "",
+      "time": "02:11:08.5868284",
+      "best_time": "02:11:08.5868284",
+      "best_segment": "00:02:19.9039044"
+    },
+    {
+      "title": "Defeat Serpent",
+      "icon": "",
+      "time": "02:14:58.3427172",
+      "best_time": "02:14:58.3427172",
+      "best_segment": "00:03:49.7558888"
+    },
+    {
+      "title": "Defeat Lich +",
+      "icon": "",
+      "time": "02:18:51.6645528",
+      "best_time": "02:18:51.6645528",
+      "best_segment": "00:03:53.3218356"
+    },
+    {
+      "title": "Defeat Jormungandr",
+      "icon": "",
+      "time": "02:24:19.6053555",
+      "best_time": "02:24:19.6053555",
+      "best_segment": "00:05:27.9408027"
+    }
+  ],
+  "theme": "default",
+  "theme_variant": "default",
+  "width": 10,
+  "height": 10
+}

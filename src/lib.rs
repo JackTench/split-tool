@@ -1,2 +1,2 @@
-mod converter;
-mod libresplit;
+pub mod converter;
+pub mod libresplit;

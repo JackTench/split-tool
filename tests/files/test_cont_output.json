@@ -272,8 +272,8 @@
       "best_segment": "00:05:27.9408027"
     }
   ],
-  "theme": "default",
-  "theme_variant": "default",
+  "theme": "standard",
+  "theme_variant": "standard",
   "width": 10,
   "height": 10
 }

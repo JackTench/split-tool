@@ -18,6 +18,10 @@ pub struct LibreSplitSplitFile {
 }
 
 impl LibreSplitSplitFile {
+    pub fn from_titles_list(titles: Vec<String>) -> Self {
+        todo!("construct split file from list of titles");
+    }
+
     pub fn to_json(&self) -> String {
         to_string_pretty(&self).expect("Failed to write JSON.")
     }

@@ -44,8 +44,8 @@ impl ConvertableSplitFile for LiveSplitRun {
             start_delay: "0.000000".to_string(),
             world_record: "0.000000".to_string(),
             splits,
-            theme: "default".to_string(),
-            theme_variant: "default".to_string(),
+            theme: "standard".to_string(),
+            theme_variant: "standard".to_string(),
             width: 10,
             height: 10,
         }

@@ -18,6 +18,27 @@ pub struct LibreSplitSplitFile {
 }
 
 impl LibreSplitSplitFile {
+    pub fn from_titles_list(title: String, titles: Vec<String>) -> Self {
+        let mut splits: Vec<LibreSplitSplit> = vec![];
+        for title in titles.iter() {
+            let split = LibreSplitSplit::from_title(title.to_string());
+            splits.push(split);
+        }
+
+        Self {
+            title,
+            attempt_count: 0,
+            comparison_method: 0,
+            start_delay: "0.000000".to_string(),
+            world_record: "0.000000".to_string(),
+            splits,
+            theme: "standard".to_string(),
+            theme_variant: "standard".to_string(),
+            width: 10,
+            height: 10,
+        }
+    }
+
     pub fn to_json(&self) -> String {
         to_string_pretty(&self).expect("Failed to write JSON.")
     }

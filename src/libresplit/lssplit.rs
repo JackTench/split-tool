@@ -8,3 +8,15 @@ pub struct LibreSplitSplit {
     pub best_time: String,
     pub best_segment: String,
 }
+
+impl LibreSplitSplit {
+    pub fn from_title(title: String) -> Self {
+        Self {
+            title,
+            icon: String::new(),
+            time: "0.000000".to_string(),
+            best_time: "0.000000".to_string(),
+            best_segment: "0.000000".to_string(),
+        }
+    }
+}

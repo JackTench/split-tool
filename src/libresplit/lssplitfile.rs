@@ -19,7 +19,11 @@ pub struct LibreSplitSplitFile {
 
 impl LibreSplitSplitFile {
     pub fn from_titles_list(title: String, titles: Vec<String>) -> Self {
-        let splits = vec![];
+        let mut splits: Vec<LibreSplitSplit> = vec![];
+        for title in titles.iter() {
+            let split = LibreSplitSplit::from_title(title.to_string());
+            splits.push(split);
+        }
 
         Self {
             title,

@@ -18,7 +18,7 @@ pub struct LibreSplitSplitFile {
 }
 
 impl LibreSplitSplitFile {
-    pub fn from_titles_list(titles: Vec<String>) -> Self {
+    pub fn from_titles_list(title: String, titles: Vec<String>) -> Self {
         todo!("construct split file from list of titles");
     }
 

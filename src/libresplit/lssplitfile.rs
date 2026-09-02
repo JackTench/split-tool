@@ -19,7 +19,20 @@ pub struct LibreSplitSplitFile {
 
 impl LibreSplitSplitFile {
     pub fn from_titles_list(title: String, titles: Vec<String>) -> Self {
-        todo!("construct split file from list of titles");
+        let splits = vec![];
+
+        Self {
+            title,
+            attempt_count: 0,
+            comparison_method: 0,
+            start_delay: "0.000000".to_string(),
+            world_record: "0.000000".to_string(),
+            splits,
+            theme: "standard".to_string(),
+            theme_variant: "standard".to_string(),
+            width: 10,
+            height: 10,
+        }
     }
 
     pub fn to_json(&self) -> String {

@@ -1,12 +1,14 @@
 use serde::{Deserialize, Serialize};
 
+use crate::libresplit::lstime::LibreSplitTime;
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct LibreSplitSplit {
     pub title: String,
     pub icon: String,
-    pub time: String,
-    pub best_time: String,
-    pub best_segment: String,
+    pub time: LibreSplitTime,
+    pub best_time: LibreSplitTime,
+    pub best_segment: LibreSplitTime,
 }
 
 impl LibreSplitSplit {
@@ -14,9 +16,9 @@ impl LibreSplitSplit {
         Self {
             title,
             icon: String::new(),
-            time: "0.000000".to_string(),
-            best_time: "0.000000".to_string(),
-            best_segment: "0.000000".to_string(),
+            time: LibreSplitTime::default(),
+            best_time: LibreSplitTime::default(),
+            best_segment: LibreSplitTime::default(),
         }
     }
 }
